@@ -14,12 +14,6 @@
  *= require_self
  */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body{
   background-color: #fff;
   color: #333;
@@ -27,4 +21,94 @@ body{
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
+}
+
+h1{
+  margin-block-end: 17.42px;
+  margin-block-start: 17.42px;
+}
+
+a{
+  color: #000;
+  cursor: pointer;
+}
+
+a:-webkit-any-link{
+  cursor: pointer;
+  text-decoration: underline;
+}
+a:hover{
+  color: #fff;
+  background-color: #000;
+}
+
+p,td,ul{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+table{
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+th{
+  padding-bottom: 5px;
+}
+
+td{
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+#notice{
+  color: green;
+  display: block;
+  margin: 33px;
+}
+
+label{
+  display: block;
+}
+
+div.field,
+div.actions{
+  margin-bottom: 10px;
+}
+
+.field_with_errors{
+  padding: 2px;
+  display: table;
+}
+
+#error_explanation{
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2{
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li{
+  font-size: 12px;
+  list-style: square;
 }
